@@ -18,7 +18,7 @@ If you're ever in doubt, delete any `Lexer.hs` and `Parser.hs` files.
 To test your lexer and parser, you can simply run `cabal run`, which executes `main` in `Main.hs`.
 Try your parser and lexer on different inputs, the `examples` directory contains a few `.arrow` programs with corresponding `.space` layouts.
 
-## File structure
+## File structur
 The exercises are spread out over various (source) files. Please adhere to this distribution for the sake of your grader.
  - [open-questions.md](open-questions.md): Exercises 4 and 10
  - [src/Model.hs](src/Model.hs): Exercises 1 and 2
@@ -27,3 +27,8 @@ The exercises are spread out over various (source) files. Please adhere to this 
  - [src/Algebra.hs](src/Algebra.hs): Exercises 5 and 6
  - [src/Interpreter.hs](src/Interpreter.hs): Exercises 7, 8 and 9
  - [src/Main.hs](src/Main.hs): Exercise 11 and testing
+
+## Own Readme stuff
+run `cabal build`, then `cabal repl`.
+within cabal repl, to use the Lexer (for example), run
+`:m Lexer` (meaning: load module 'Lexer')

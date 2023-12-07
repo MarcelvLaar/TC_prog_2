@@ -3,7 +3,7 @@ module Main where
 import Algebra
 import Model
 import Interpreter
-import Lexer
+import Lexer ( alexScanTokens )
 import Parser
 
 -- Exercise 11
