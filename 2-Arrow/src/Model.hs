@@ -1,33 +1,40 @@
+{-# LANGUAGE GADTs #-}
 module Model where
 
 -- Exercise 1
 data Token =
         Token
-        | Arrow
-        | Point
-        | Colon
-        | Go
-        | Take
-        | Mark
-        | Nothin
-        | Turn
-        | Case
-        | Of
-        | End
-        | Lefty
-        | Righty
-        | Fronty
-        | Semicolon
-        | Empt
-        | Lambdac
-        | Debrisc
-        | Asteroidc
-        | Boundaries
-        | Id String
+        | Tarrow
+        | Tpoint
+        | Tcolon
+        | Tgo
+        | Ttake
+        | Tmark
+        | Tnothin
+        | Tturn
+        | Tcase
+        | Tof
+        | Tend
+        | Tlefty
+        | Trighty
+        | Tfronty
+        | Tsemicolon
+        | Tempt
+        | Tlambdac
+        | Tdebrisc
+        | Tasteroidc
+        | Tboundaries
+        | Tid String
         deriving Show
 
 
 -- Exercise 2
-data Program =
-        Program
+data Program = Program [Rule]
+  deriving Show
+
+data Rule = Rule {
+  name :: String,
+  cmds :: [ Command ]}
         deriving Show
+
+data Command = Cgo | Ctake | Cmark | Cnothing deriving Show

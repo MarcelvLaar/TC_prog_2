@@ -12,25 +12,25 @@ $digit = [0-9]
 tokens :-
   "--".*                        ;
   $white+                       ;
-  \.                            {const Point}
-  \,                            {const Colon}
-  \;                            {const Semicolon}
-  "->"                          {const Arrow}
-  "go"                          {const Go}
-  "take"                        {const Take}
-  "mark"                        {const Mark}
-  "nothing"                     {const Nothin}
-  "turn"                        {const Turn}
-  "case"                        {const Case}
-  "of"                          {const Of}
-  "end"                         {const End}
-  "left"                        {const Lefty}
-  "right"                       {const Righty}
-  "front"                       {const Fronty}
-  "Empty"                       {const Empt}
-  "Lambda"                      {const Lambdac}
-  "Debris"                      {const Debrisc}
-  "Asteroid"                    {const Asteroidc}
-  "Boundary"                    {const Boundaries}
-  ($letter|$digit|"+"|"-")+     {\s -> Id s}
+  \.                            {const Tpoint}
+  \,                            {const Tcolon}
+  \;                            {const Tsemicolon}
+  "->"                          {const Tarrow}
+  "go"                          {const Tgo}
+  "take"                        {const Ttake}
+  "mark"                        {const Tmark}
+  "nothing"                     {const Tnothin}
+  "turn"                        {const Tturn}
+  "case"                        {const Tcase}
+  "of"                          {const Tof}
+  "end"                         {const Tend}
+  "left"                        {const Tlefty}
+  "right"                       {const Trighty}
+  "front"                       {const Tfronty}
+  "Empty"                       {const Tempt}
+  "Lambda"                      {const Tlambdac}
+  "Debris"                      {const Tdebrisc}
+  "Asteroid"                    {const Tasteroidc}
+  "Boundary"                    {const Tboundaries}
+  ($letter|$digit|"+"|"-")+     {\s -> Tid s}
   _                             { const Token }
