@@ -11,23 +11,23 @@ import Model
   "->"        { Tarrow }
 '.'           { Tpoint }
 ':'           { Tcolon }
-"go"          { Tgo }
-"take"        { Ttake }
-"mark"        { Tmark }
-"nothing"     { Tnothin }
-"turn"        { Tturn }
-"case"        { Tcase }
-"of"          { Tof }
-"end"         { Tend }
-"left"        { Tlefty }
-"right"       { Trighty }
-"front"       { Tfronty }
 ';'           { Tsemicolon }
 '_'           { Tempt }
-"lambda"      { Tlambdac }
-"debris"      { Tdebrisc }
-"asteroid"    { Tasteroidc }
-"boundary"    { Tboundaries }
+go            { Tgo }
+take          { Ttake }
+mark          { Tmark }
+nothing       { Tnothin }
+turn          { Tturn }
+case          { Tcase }
+of            { Tof }
+end           { Tend }
+left          { Tlefty }
+right         { Trighty }
+front         { Tfronty }
+lambda        { Tlambdac }
+debris        { Tdebrisc }
+asteroid      { Tasteroidc }
+boundary      { Tboundaries }
 
 %%
 
